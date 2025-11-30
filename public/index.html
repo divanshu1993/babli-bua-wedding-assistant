@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Baby Bua – Wedding Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f5f5f5; }
+    .app { max-width: 480px; margin: 0 auto; height: 100vh; display: flex; flex-direction: column; }
+    header { padding: 16px; background: #ff758c; color: white; text-align: center; font-weight: 600; }
+    #chat { flex: 1; padding: 12px; overflow-y: auto; background: #fdfdfd; }
+    .msg { margin-bottom: 10px; }
+    .msg.me { text-align: right; }
+    .bubble { display: inline-block; padding: 8px 12px; border-radius: 16px; max-width: 80%; }
+    .me .bubble { background: #ffefef; }
+    .bot .bubble { background: #e5f6ff; }
+    form { display: flex; padding: 8px; background: #fff; border-top: 1px solid #ddd; }
+    input[type="text"] { flex: 1; padding: 8px; border-radius: 20px; border: 1px solid #ccc; }
+    button { margin-left: 8px; padding: 8px 14px; border-radius: 20px; border: none; background: #ff758c; color: #fff; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      Babli Bua – Your Wedding Assistant 💍
+    </header>
+    <div id="chat"></div>
+    <form id="chat-form">
+      <input id="msg-input" type="text" placeholder="Ask about functions, venue, dress code..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
